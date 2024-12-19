@@ -1,36 +1,45 @@
 <!DOCTYPE html>
 <html lang="pt">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Classificador com Modal</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
     <!-- Div Unificada para Avaliação -->
     <div class="avaliacao-container">
         <div class="grafico-avaliacao">
+            
+            <div class="ranking-container">
+                <div class="ranking">
+                    <div class="valor">1,5</div>
+                    <div class="total">1250</div>
+                </div>
+            </div>
+
             <div class="estrela-grafico">
                 <span class="estrela">3</span>
                 <div class="barra" style="width: 40%"></div>
-                <span class="porcentagem">40%</span>
+                <span class="porcentagem"></span>
             </div>
             <div class="estrela-grafico">
                 <span class="estrela">2</span>
                 <div class="barra" style="width: 30%"></div>
-                <span class="porcentagem">30%</span>
+                <span class="porcentagem"></span>
             </div>
             <div class="estrela-grafico">
                 <span class="estrela">1</span>
                 <div class="barra" style="width: 50%"></div>
-                <span class="porcentagem">50%</span>
+                <span class="porcentagem"></span>
             </div>
+
+                <!-- Ranking de Avaliações -->
+
         </div>
-        <div class="ranking">
-            <h3>Ranking de Avaliações</h3>
-            <p><strong>1250</strong> avaliações realizadas</p>
-            <p>Média de avaliação: <strong>1.5</strong> estrelas</p>
-        </div>
+
         <!-- Classificador de Estrelas visível -->
         <div class="classificador" id="classificador">
             <span class="estrela" id="estrela-1">&#9734;</span>
@@ -54,4 +63,5 @@
 
     <script src="script.js"></script>
 </body>
+
 </html>

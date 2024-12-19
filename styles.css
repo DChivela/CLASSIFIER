@@ -1,7 +1,11 @@
 body {
     font-family: Arial, sans-serif;
+    height: 100%;
+    /* Garantir que o body ocupe toda a altura da página */
     margin: 0;
-    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #f4f4f4;
 }
 
@@ -11,18 +15,25 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 300px; /* Tamanho fixo como de um calendário */
+    width: 300px;
+    /* Tamanho fixo como de um calendário */
     background-color: #fff;
     padding: 20px;
-    margin-top: 50px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Centraliza o conteúdo dentro do body */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 /* Gráfico de Avaliação */
 .grafico-avaliacao {
     width: 100%;
     margin-bottom: 20px;
+    border: 1px #ccc;
+    
 }
 
 .estrela-grafico {
@@ -32,14 +43,14 @@ body {
 }
 
 .estrela {
-    font-size: 20px;
+    /* font-size: 10px; */
     margin-right: 10px;
 }
 
 .barra {
     width: 50%;
     height: 10px;
-    background-color: #ccc;
+    background-color: #eb4ede;
     margin-right: 10px;
 }
 
@@ -47,13 +58,28 @@ body {
     font-size: 14px;
 }
 
-.ranking {
+/* Organizar ranking e gráfico */
+.ranking-container {
+    display: flex;
+    justify-content: space-between;
     width: 100%;
-    padding: 10px 0;
-    text-align: center;
-    margin-bottom: 20px;
+    align-items: flex-end;
+    /* Coloca 1,5 ao lado do gráfico */
 }
 
+.ranking .valor {
+    font-size: 30px;
+    /* Tamanho maior para 1,5 */
+    font-weight: bold;
+    color: #eb4ede;
+}
+
+.ranking .total {
+    font-size: 14px;
+    /* Tamanho menor para 1250 */
+}
+
+/* Estilo do Ranking */
 h3 {
     margin-bottom: 10px;
 }
@@ -64,14 +90,37 @@ h3 {
     margin-top: 10px;
 }
 
-.estrela {
-    font-size: 30px;
+#estrela-1,
+#estrela-2,
+#estrela-3 {
+    font-size: 50px;
+    /* Estrelas menores */
     cursor: pointer;
-    color: #ccc;
+    color: #252525;
 }
 
-.estrela:hover {
-    color: gold;
+/* Classificador de Estrelas */
+.classificador {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.estrela {
+    /* font-size: 30px; */
+    cursor: pointer;
+    color: #727272;
+}
+
+#estrela-1:hover {
+    color: #eb4ede;
+}
+
+#estrela-2:hover {
+    color: #eb4ede;
+}
+
+#estrela-3:hover {
+    color: #eb4ede;
 }
 
 /* Estilo do Modal */
@@ -107,7 +156,7 @@ h3 {
 }
 
 .estrela-modal:hover {
-    color: gold;
+    color: #eb4ede;
 }
 
 .fechar-modal {

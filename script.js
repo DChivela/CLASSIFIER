@@ -23,7 +23,7 @@ estrelasModal.forEach((estrela, index) => {
     estrela.addEventListener('click', () => {
         resetarEstrelasModal(); // Reseta as cores das estrelas
         for (let i = 0; i <= index; i++) {
-            estrelasModal[i].style.color = 'gold'; // Marca as estrelas selecionadas
+            estrelasModal[i].style.color = ' #eb4ede'; // Marca as estrelas selecionadas
         }
     });
 });
