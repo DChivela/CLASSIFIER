@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classificador com Modal</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Avaliação Inicial com Gráfico -->
+    <div class="avaliacao-inicial">
+        <div class="grafico-avaliacao">
+            <div class="estrela-grafico">
+                <span class="estrela">&#9734;</span>
+                <div class="barra" style="width: 40%"></div>
+                <span class="porcentagem">40%</span>
+            </div>
+            <div class="estrela-grafico">
+                <span class="estrela">&#9734;&#9734;</span>
+                <div class="barra" style="width: 30%"></div>
+                <span class="porcentagem">30%</span>
+            </div>
+            <div class="estrela-grafico">
+                <span class="estrela">&#9734;&#9734;&#9734;</span>
+                <div class="barra" style="width: 50%"></div>
+                <span class="porcentagem">50%</span>
+            </div>
+        </div>
+        <div class="ranking">
+            <h3>Ranking de Avaliações</h3>
+            <p><strong>1250</strong> avaliações realizadas</p>
+            <p>Média de avaliação: <strong>1.5</strong> estrelas</p>
+        </div>
+    </div>
+
+    <!-- Classificador de Estrelas visível -->
+    <div class="classificador" id="classificador">
+        <span class="estrela" id="estrela-1">&#9734;</span>
+        <span class="estrela" id="estrela-2">&#9734;</span>
+        <span class="estrela" id="estrela-3">&#9734;</span>
+    </div>
+
+    <!-- Modal de Votação -->
+    <div class="modal" id="modal">
+        <div class="conteudo-modal">
+            <h2>Escolha uma avaliação:</h2>
+            <div class="classificador-modal">
+                <span class="estrela-modal" id="estrela-modal-1">&#9734;</span>
+                <span class="estrela-modal" id="estrela-modal-2">&#9734;</span>
+                <span class="estrela-modal" id="estrela-modal-3">&#9734;</span>
+            </div>
+            <button class="fechar-modal" id="fechar-modal">Fechar</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

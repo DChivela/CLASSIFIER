@@ -1,0 +1,115 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Avaliação Inicial com Gráfico */
+.avaliacao-inicial {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+.grafico-avaliacao {
+    width: 60%;
+}
+
+.estrela-grafico {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.estrela {
+    font-size: 25px;
+    margin-right: 10px;
+}
+
+.barra {
+    width: 50%;
+    height: 10px;
+    background-color: #ccc;
+    margin-right: 10px;
+}
+
+.porcentagem {
+    font-size: 18px;
+}
+
+.ranking {
+    width: 35%;
+    padding-left: 20px;
+    text-align: left;
+}
+
+h3 {
+    margin-bottom: 10px;
+}
+
+.classificador {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.estrela {
+    font-size: 50px;
+    cursor: pointer;
+    color: #ccc;
+}
+
+.estrela:hover {
+    color: gold;
+}
+
+/* Estilo do Modal */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+}
+
+.conteudo-modal {
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    width: 300px;
+}
+
+.classificador-modal {
+    margin-top: 10px;
+}
+
+.estrela-modal {
+    font-size: 40px;
+    cursor: pointer;
+    color: #ccc;
+    margin: 5px;
+}
+
+.estrela-modal:hover {
+    color: gold;
+}
+
+.fechar-modal {
+    margin-top: 15px;
+    padding: 10px;
+    background-color: #ff4d4d;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+
+.fechar-modal:hover {
+    background-color: #ff1a1a;
+}
